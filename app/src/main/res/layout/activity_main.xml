@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_newgame"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="新游戏"
+            android:textColor="#cc000000"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/select_difficulty"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/information_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/display_score"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="0"
+            android:textColor="#cc000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/display_time"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="00:00"
+            android:textColor="#cc000000"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/select_mode"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/brick_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
+</LinearLayout>
